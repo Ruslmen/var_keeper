@@ -11,7 +11,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
       - name: Create virtual env
-        run: apt install python3.12-venv
+        run: python3 -m venv venv
       - name: Install requirements
         run: |
           source venv/bin/activate
